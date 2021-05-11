@@ -1,6 +1,6 @@
-# pos系统
+# Pos系统
 
-> 系统是一个快餐店的POS系统，使用的技术栈为：Vue+Webpack+Element+Axios+vueRouter
+> 系统是一个快餐店的Pos系统，使用的技术栈为：Vue+Webpack+Element+Axios+vueRouter
 
 ## 系统截图
 ![首页](https://github.com/QuanMiny/Pos/blob/15d14450349689cfa4715005008a09036beb31c1/readme_img/pos.jpg)
