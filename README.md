@@ -1,6 +1,5 @@
 # pos系统
 
-> Vue2.0 project
 > 系统是一个快餐店的POS系统，使用的技术栈为：Vue+Webpack+Element+Axios+vueRouter
 
 ## 系统截图
@@ -12,8 +11,8 @@
 - 结账提醒
 
 ## 系统接口
-常用商品：https://www.fastmock.site/mock/0bf6a5bae7eab8507e44b56191ddff36/vuepos/oftenGoods
-分类商品：https://www.fastmock.site/mock/0bf6a5bae7eab8507e44b56191ddff36/vuepos/typeGoods
+- 常用商品：https://www.fastmock.site/mock/0bf6a5bae7eab8507e44b56191ddff36/vuepos/oftenGoods
+- 分类商品：https://www.fastmock.site/mock/0bf6a5bae7eab8507e44b56191ddff36/vuepos/typeGoods
 
 ## Build Setup
 
