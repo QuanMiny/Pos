@@ -149,9 +149,7 @@ export default {
       type0Goods: [],
       type1Goods: [],
       type2Goods: [],
-      type3Goods: [],
-      totalMoney: 0,
-      totalCount: 0
+      type3Goods: []
     }
   },
   created() {
@@ -190,6 +188,19 @@ export default {
     const orderHeight = document.body.clientHeight
     document.getElementById('order-list').style.height = orderHeight + 'px'
   },
+  // 计算属性的使用
+  computed: {
+    totalCount() {
+      return this.tableData.reduce((pre, goods) => {
+        return pre + goods.count
+      }, 0)
+    },
+    totalMoney() {
+      return this.tableData.reduce((pre, goods) => {
+        return pre + goods.count * goods.price
+      }, 0)
+    }
+  },
   methods: {
     // 添加商品
     addOrderList(goods) {
@@ -213,15 +224,12 @@ export default {
         }
         this.tableData.push(newGoods)
       }
-      // 计算汇总价格
-      this.getAllMoney()
     },
     // 删除单个商品
     delSingleGood(good) {
       this.tableData = this.tableData.filter(
         (obj) => obj.goodsId !== good.goodsId
       )
-      this.getAllMoney()
     },
     // 删除全部商品
     delAllGoods() {
@@ -241,17 +249,6 @@ export default {
         })
       } else {
         this.$message.error('账单不能为空！')
-      }
-    },
-    // 汇总数量金额
-    getAllMoney() {
-      this.totalCount = 0
-      this.totalMoney = 0
-      if (this.tableData) {
-        this.tableData.forEach((el) => {
-          this.totalCount += el.count
-          this.totalMoney = this.totalMoney + el.price * el.count
-        })
       }
     }
   }
