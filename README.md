@@ -1,6 +1,19 @@
-# pos
+# pos系统
 
-> A Vue.js project
+> Vue2.0 project
+> 系统是一个快餐店的POS系统，使用的技术栈为：Vue+Webpack+Element+Axios+vueRouter
+
+## 系统截图
+![首页](https://github.com/QuanMiny/Pos/blob/15d14450349689cfa4715005008a09036beb31c1/readme_img/pos.jpg)
+
+## 功能
+- 点餐增加、删除
+- 数量、金额计算
+- 结账提醒
+
+## 系统接口
+常用商品：https://www.fastmock.site/mock/0bf6a5bae7eab8507e44b56191ddff36/vuepos/oftenGoods
+分类商品：https://www.fastmock.site/mock/0bf6a5bae7eab8507e44b56191ddff36/vuepos/typeGoods
 
 ## Build Setup
 
